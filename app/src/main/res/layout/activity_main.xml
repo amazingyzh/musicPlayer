@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/song_list"
+        android:layout_width="match_parent"
+        android:layout_height="286dp" />
+    <TextView
+        android:id="@+id/song_currentplay"
+        android:layout_height="50dp"
+        android:layout_width="match_parent" />
+    <TextView
+        android:gravity="left|top"
+        android:id="@+id/blank"
+        android:layout_height="100dp"
+        android:layout_width="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:hint="Enter the Number of the Song"
+            android:id="@+id/song_edit"
+            android:layout_width="300dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:text="add"
+            android:id="@+id/song_add"
+            android:layout_width="100dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/play_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/play_last"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Last"/>
+
+        <Button
+            android:id="@+id/play_stop"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Play/Pause"/>
+
+        <Button
+            android:id="@+id/play_next"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="Next"/>
+
+
+        <Spinner
+            android:id="@+id/play_mode"
+            android:layout_width="150dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+</LinearLayout>
